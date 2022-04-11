@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(#2b1055,#7597de);
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+header .logo{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+  background: #fff;
+  color: #2b1055;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#1c0522,transparent);
+  z-index: 1000;
+}
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section img#moon{
+  mix-blend-mode: screen;
+}
+section img#mountains_front{
+  z-index: 10;
+}
+#text{
+  position: absolute;
+  right: -350px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+  
+}
+#btn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+}
+.sec{
+  padding: 100px;
+  background: #1c0522;
+  height: 900px;
+}
+
+#h4{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#photo-text{
+  font-size: 1.2em;
+  color: #fff;
+}
+.myphoto{
+  position: absolute;
+  right: 180px;
+  height: 300px;
+  border-radius: 8px;
+}
+table{
+  position: absolute;
+  top: 1000px;
+  z-index: 10;
+}
+table tr td{
+  font-size: 1.2em;
+  color: #fff;
+}
+
+
+.skillbar{
+  position: absolute;
+  height: 3400px;
+  left: 500px;
+  top: 1000px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #0a7aca;
+  grid-area: skillbar;
+}
+.wrapper{
+  width: 40%;
+  min-width: 570px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.container{
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border: 2px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+} 
+.container *{
+  font-family: "Poppins",sans-serif;
+  color: black;
+  font-weight: 500;
+}
+h2{
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+}
+.skills:not(:last-child){
+  margin-bottom: 30px;
+}
+.details{
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+
+  border: 2px solid #0d96e0;
+
+  border-radius: 20px;
+
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #0d96e0;
+ 
+
+}
+#html-bar{
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+      width: 90%;
+  }
+}
+#css-bar{
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+  100%{
+      width: 75%;
+  }
+}
+#js-bar{
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100%{
+      width: 72%;
+  }
+}
+#jQuery-bar{
+  animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+  100%{
+      width: 58%;
+  }
+}
+.sec2{
+  padding: 100px;
+  background: #2c0835;
+  height: 650px;
+}
+h3{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+#project-text{
+  font-size: 1.2em;
+  color: #fff;
+}
+#project-pic1{
+  position: absolute;
+  z-index: 10;
+  height: 300px;
+  padding: 30px;
+  gap: 30px;
+  top: 1900px;
+}
+#project-pic2{
+  position: absolute;
+  z-index: 10;
+  height: 300px;
+  padding: 30px;
+  gap: 30px;
+  top: 1900px;
+  left: 410px;
+}
+#project-pic3{
+  position: absolute;
+  z-index: 10;
+  height: 300px;
+  padding: 30px;
+  gap: 30px;
+  top: 1900px;
+  left: 950px;
+}
+.sec3{
+  padding: 100px;
+  background: #3c0b48;
+  height: 800px;
+}
+.sec5{
+  width: 100%;
+  padding: 100px;
+  background: #530f64;
+  height: 1000px;
+}
+p{
+  font-size: 1.2em;
+  color: #fff;
+}

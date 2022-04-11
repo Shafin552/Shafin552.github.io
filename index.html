@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shafin Rahman</title><link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+   <a href="#" class="logo">Logo</a>
+   <ul>
+     <li><a href="#" class="active">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Projects</a></li>
+     <li><a href="#">Skill</a></li>
+     <li><a href="#">Education</a></li>
+   </ul>
+  </header>
+  <section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Wellcome</h2>
+    <a href="#" id="btn">Explore</a>
+    <img src="mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <div id="h4">HI I'm Shafin Rahman, nice to meet you</div>
+    <div id="photo-text">
+      I'm a web develpoer on the beginner stage.I study on Daffodil International University at CIS department.
+      I have studied HTML, CSS ,JavaScript and c langauges.
+       Now I'm leaning toward to learn mysql,java,bootstrap,python and other langauges.
+      </div>
+      <img src="my photo.png" alt="shafin" class="myphoto">
+      <table border="0" align="left">
+        <tr><td>Name</td><td>Shafin Rahman</td></tr>
+        <tr><td>D.O.B</td><td>30-09-2000</td></tr>
+        <tr><td>Mobile</td><td>+880 1765486552</td></tr>
+        <tr><td>Address</td><td>Gazipur,Bangladesh</td></tr>
+        <tr><td>E-mail</td><td>shafin119463@gmal.com</td></tr>
+        <tr><td>
+          <a href="https://www.facebook.com/rahman.s.shafin/"><img src="facebook.png" alt="facebook"></a>
+          <a href=""><img src="whatsapp.png" alt="whatsapp"></a>
+          <a href="shafin119463@gmail.com"><img src="at.png" alt="e-mail"></a>
+          <a href="https://www.youtube.com/channel/UC-J2iGTYCYwjDFOarXKDS2Q"><img src="play-alt.png" alt="youtube"></a>
+        </td></tr>
+      </table>
+       </div>
+  </div>
+  <div class="sec2" id="sec2">
+  <h3>Projects</h3>
+  <div id="project-text">I have done several projects through out this year.Most of them were class project on my University.
+     Besides I have worked on UpWork to test my skill on basic programing langauges and handled a few projects byself.</div>
+     <img src="lab 2 (2).png" alt="form" id="project-pic1"><img src="grid1.png" alt="form" id="project-pic2"><img src="table 1.png" alt="form" id="project-pic3">
+  </div>
+  <div class="sec3" id="sec3">
+    <h3>Skills</h3>
+    <div class="skillbar">
+      <div class="wrapper">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="container">
+            <h2>Skills </h2>
+            <div class="skills">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>75%</span>
+                </div>
+                <div class="bar">
+                    <div id="css-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Javascript</span>
+                    <span>72%</span>
+                </div>
+                <div class="bar">
+                    <div id="js-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>jQuery</span>
+                    <span>68%</span>
+                </div>
+                <div class="bar">
+                    <div id="jQuery-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="sec5" id="sec5">
+    <h3>Education</h3>
+    <p>
+    SSC form Rani Bilash Moni Govt. Boys High School whth a grade GPA 4.50.<br>
+    Hsc from Gazipur Zilla College with a grade GPA 4.55<br>
+    Bachelor of Science in Computing and Information System(present)</p>
+  </div>
+ 
+ 
+
+  <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll',function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      mountains_behind.style.top = value * 0.5 + 'px';
+      text.style.marginRight= value * 4 + 'px';
+      text.style.marginTop= value * 1.5 + 'px';
+      btn.style.marginTop= value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+</body>
+</html>
